@@ -7,7 +7,8 @@ RUN apk -U upgrade
 
 # Instala o NGINX para testar
 RUN apk add nginx php7-intl php7-session php7-json php7-gd php7-mysqli php7-zlib php7-curl php7 php7-fpm php7-opcache php7-sqlite3 \
-    php7-pdo_mysql php7-mysqlnd php7-pdo_sqlite php7-pdo_pgsql php7-pgsql openrc php7-xmlrpc php7-xmlreader php7-simplexml php7-ctype
+    php7-pdo_mysql php7-mysqlnd php7-pdo_sqlite php7-pdo_pgsql php7-pgsql openrc php7-xmlrpc php7-xmlreader php7-simplexml php7-ctype \
+    vim php7-iconv
 
 COPY entrypoint.sh .
 
